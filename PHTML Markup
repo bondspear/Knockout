@@ -15,3 +15,20 @@
     }
     </script>
 </div>
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+public function getConfig()
+    {
+        return json_encode([
+                "Magento_Ui/js/core/app" => [
+                    "components" => [
+                        "comp" => [
+                            "component" => "Bondspear_Hello/js/comp",
+                            "template" => "Bondspear_Hello/temp"
+                        ]
+                    ]
+                ]
+            ]);
+    }
